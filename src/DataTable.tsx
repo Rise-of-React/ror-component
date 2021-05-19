@@ -1,4 +1,7 @@
 import React,{FunctionComponent, ReactNode} from 'react';
+import { TableBody } from './table/TableBody';
+import { TableFooter } from './table/TableFooter';
+import { TableHeader } from './table/TableHeader';
 import { row } from './types';
 
 interface DataTableProps<T> {
@@ -9,5 +12,10 @@ interface DataTableProps<T> {
 
 export function DataTable<T extends row>(props: DataTableProps<T>) {
   const {data} = props;
-  return <div style={{width:500,height:300,backgroundColor:'red'}}>{data.map((d)=><div>${d}</div>)}</div>;
+  return <div>
+    <TableHeader/>
+    <TableBody />
+    {data.map((d)=><div>${d}</div>)}
+    <TableFooter />
+  </div>;
 }
