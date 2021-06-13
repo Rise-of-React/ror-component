@@ -2,14 +2,10 @@ export interface TableFooterProps {
   sticky?: boolean;
 }
 
-const style = {
+const style = {};
 
-}
-
-const defaultOption = {
-
-}
+const defaultOption = {};
 
 export const TableFooter = (props: TableFooterProps) => {
-  return <TableFooter />
-}
+  return <></>;
+};

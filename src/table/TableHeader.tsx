@@ -1,11 +1,7 @@
-export interface TableHeaderProps {
+export interface TableHeaderProps {}
 
-}
-
-const style = {
-
-}
+const style = {};
 
 export const TableHeader = () => {
-  return <TableHeader />
-}
+  return <></>;
+};
